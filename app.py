@@ -52,7 +52,7 @@ def load_model_from_gcs(bucket_name, source_blob):
 # =========================================================
 # CONFIGURACIÓN DE PARÁMETROS
 # =========================================================
-bucket_name = st.text_input("Nombre del bucket de GCS:", "bucket_131025")
+bucket_name = st.text_input("Nombre del bucket de GCS:", "taxi-bucket-2022-jeko")
 prefix = st.text_input("Carpeta/prefijo dentro del bucket:", "tlc_yellow_trips_2022/")
 limite = st.number_input("Número de registros por archivo a procesar:", value=1000, step=100, min_value=100)
 mostrar_grafico = st.checkbox("Mostrar gráfico de evolución del R²", value=True)
